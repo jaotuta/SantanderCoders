@@ -9,7 +9,7 @@ class CalculadoraFuncoesUnificadas {
        enter (number) {
 
             (this.numerosSalvos.numero1) ?  this.numerosSalvos.numero2 = number : this.numerosSalvos.numero1 = number
-            console.log(this.numerosSalvos)
+            
        }
   
       list () {
@@ -33,6 +33,15 @@ class CalculadoraFuncoesUnificadas {
           let addMath = `${this.numerosSalvos.numero1} + ${this.numerosSalvos.numero2}`
           this.historyOperations = [...this.historyOperations , addMath]
           return this.numerosSalvos.numero1+this.numerosSalvos.numero2
+        }
+  }
+
+  class CalculaSubtracao extends CalculadoraFuncoesUnificadas  {
+         
+        equals () {
+          let addMath = `${this.numerosSalvos.numero1} - ${this.numerosSalvos.numero2}`
+          this.historyOperations = [...this.historyOperations , addMath]
+          return this.numerosSalvos.numero1-this.numerosSalvos.numero2
         }
   }
   
