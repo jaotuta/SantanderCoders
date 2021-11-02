@@ -1,0 +1,175 @@
+.container {
+  height: 450px;
+  width: 400px;
+  background-color: rgb(70, 70, 70);
+  margin: auto;
+  margin-top: 60px;
+  border-radius: 15px;
+  border-right: 4px solid rgb(77, 77, 77);
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  box-shadow: inset 5px 5px 2px rgb(114, 114, 114), 5px 5px 4px rgb(53, 53, 53) ;
+}
+
+
+.sombra{
+  background-color: rgb(56, 56, 56);
+  grid-column: 1/5;
+  grid-row: 1/2;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 10px solid rgb(56, 56, 56);
+  justify-self: center; 
+  align-self: center;
+  width: 104%;
+  height: 103%; 
+  margin-left: 6px;
+
+
+}
+.display {
+  justify-self: center;
+  background-color: rgb(144, 160, 149);
+  width: 95%;
+  height: 100px;
+  margin: 5px;
+  margin-top: 15px;
+  margin-left: 10px;
+  grid-column: 1/5;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px rgb(24, 24, 24);
+}
+
+
+.operacao {
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(228, 179, 18);
+  width: 80px;
+  height: 40px;
+  margin: 5px;
+  justify-self: center;
+  border-radius: 5px;
+  align-self: flex-end;
+  box-shadow: inset 1px 1px 0px rgb(255, 255, 255),2px 2px 1px rgb(41, 41, 41);
+  cursor: pointer;
+
+
+}
+.numeros {
+  
+  grid-column: 1/4;
+  grid-row: 3/7;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  
+}
+.teclaNumero {
+  box-shadow: inset 2px 2px 0px rgb(255, 255, 255),2px 2px 1px rgb(41, 41, 41);
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background-color: gainsboro;
+  margin: auto;
+  width: 80px;
+  height: 40px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+  
+}
+.teclaNumero:hover,
+.teclaIgual:hover {
+  background-color: rgb(184, 184, 184);
+}
+.teclaNumero:active {
+  background-color: rgb(168, 168, 168);
+  box-shadow: inset 2px 2px 0px rgb(32, 32, 32),0px 0px 0px rgb(41, 41, 41);
+
+}
+.zero{
+  grid-column: 1/3;
+  width: 90%;
+  cursor: pointer;
+
+}
+.teclaIgual {
+  justify-self: center;
+  align-self: center;
+  width: 80px;
+  height: 80%;
+  background-color: rgb(64, 122, 139);
+  border-radius: 5px;
+  grid-row: 5/7;
+  box-shadow: inset 1px 1px 0px rgb(255, 255, 255),2px 2px 1px rgb(41, 41, 41);
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+
+  
+}
+.credits {
+  margin-top: 65px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(153, 153, 158);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+.onoff {
+  justify-self: center;
+  align-self: center;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(64, 122, 139);
+  border-radius: 25px;
+  grid-row: 3/4;
+  box-shadow: inset 1px 1px 0px rgb(255, 255, 255),2px 2px 1px rgb(41, 41, 41);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.display>*{
+  padding: 3px;
+  text-align: end;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes fa-blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 0; }
+}
+
+.vazio {
+  position: relative;
+  margin-left: 97%;
+  background-color: rgb(0, 0, 0);
+  width: 0.1px;
+  height: 20px;
+  -webkit-animation: fa-blink .75s linear infinite;
+   -moz-animation: fa-blink .75s linear infinite;
+   -ms-animation: fa-blink .75s linear infinite;
+   -o-animation: fa-blink .75s linear infinite;
+   animation: fa-blink .75s linear infinite;
+
+}
+
+
+.result {
+  font-size: 40px;
+
+}
