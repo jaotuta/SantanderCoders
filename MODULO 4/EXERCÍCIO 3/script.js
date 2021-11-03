@@ -1,7 +1,7 @@
-const button = document.querySelector("#getList");
+const button = document.querySelector("#botaoGeraChave");
 const list = document.querySelector("ul");
 const status = document.querySelector("p");
-const clear = document.querySelector("#clear")
+const clear = document.querySelector("#limpaChave")
 
 const geraNumeroAleatoreo = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
