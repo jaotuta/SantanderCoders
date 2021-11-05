@@ -1,0 +1,23 @@
+html{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.on {
+    background-color: rgb(120, 209, 117);
+    font-weight: 750;
+
+}
+.off {
+    background-color: rgb(255, 77, 77);
+    pointer-events: none;
+    font-weight: 750;
+    
+}
+button{
+    border: none;
+    margin: none;
+    padding: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+}
