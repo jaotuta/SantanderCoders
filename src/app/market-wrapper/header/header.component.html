@@ -1,0 +1,34 @@
+<div class="header">
+    <span>
+        <a>
+            <img routerLink="/home" class="logo" src="assets/img/logo.png" alt="header-logo">
+        </a>
+    </span>
+    <form class="find-products">
+        <div class="search-fill">
+            <div class="search-fill-field">
+                <input class="seach-products" type="text" placeholder="Product">
+            </div>
+            <div class="search-right">
+                <div class="search-right-button">
+                    <span class="submit-search-button">
+                        <input class="botaosubmit" type="submit" value="ng"> 
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    <div class="cart" routerLink="/carrinho-compra">
+        <div class="img-cart">
+            <img class="carrinho" src="assets/img/cart.png" alt="">
+        </div>
+        <div class="num-prod">
+            {{attCarrinho}}
+        </div>
+    </div>
+</div>
+<div class="faixa-azul" ></div>
+
+
+

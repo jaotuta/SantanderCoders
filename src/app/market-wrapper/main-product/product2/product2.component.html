@@ -1,0 +1,15 @@
+<div class="div-produto" >
+    <div class="productDetails">
+        <img class="productImgs" src={{linkDaImagem}} alt="">
+        <p class="productDescription"> {{nomeDoProduto}}</p>
+    </div>
+    <div class="productPrice">
+        <div class="price">
+            <p class="valor">
+                <span #produtoo class="cifrao"> R$ </span> {{precoDoProduto}}
+                
+            </p>
+            <img class="carrinho" src={{linkImg}} alt="" (click)="enviaAoPai(idProduto)">
+        </div>
+    </div>
+</div>  

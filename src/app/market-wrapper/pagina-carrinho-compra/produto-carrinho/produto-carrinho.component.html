@@ -1,0 +1,15 @@
+<div id={{idProduto}} class="div-produto" >
+    <div class="selecao">
+        <input  class="checkbox" type="checkbox" value={{idProduto}} #checkbox 
+        (input)="selecionado(checkbox.checked , checkbox.value )">
+    </div>
+    <img class="productImgs" src={{linkDaImagem}} >
+    <div class="productDetails">
+        <p class="productDescription"> {{nomeDoProduto}}</p>
+    </div>
+    <div class="productlixo">
+        
+            <img class="lixo" src="assets/img/lixo.png"  (click)="excluirItem()">
+        
+    </div>
+</div>  

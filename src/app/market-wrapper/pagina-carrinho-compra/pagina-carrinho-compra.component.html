@@ -1,0 +1,67 @@
+<div class="window">
+<div class="header">
+    <span>
+        <a>
+            <img routerLink="/home" class="logo" src="assets/img/logo.png" alt="header-logo">
+        </a>
+    </span>
+    <form class="find-products">
+        <div class="search-fill">
+            <div class="search-fill-field">
+                <input class="seach-products" type="text" placeholder="Product">
+            </div>
+            <div class="search-right">
+                <div class="search-right-button">
+                    <span class="submit-search-button">
+                        <input class="botaosubmit" type="submit" value="ng"> 
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+
+    <div class="cart" routerLink="/carrinho-compra">
+        <div class="img-cart">
+            
+        </div>
+        <div class="num-prod">
+            
+        </div>
+    </div>
+
+</div>
+
+<div class="faixa-azul" >
+    <span class="descricaoPag">    Revise seu Pedido.    </span>
+</div>
+
+<main>
+    <div class="main-content">
+        <p>Selecione os Produtos</p>
+        <div class="listaDeProdutos" *ngFor=" let produto of arrayProdRender">
+        <app-produto-carrinho 
+        (addAoTotal)="addAoTotal($event)"
+        (rmvAoTotal)="rmvAoTotal($event)"
+        (excluirProd)= "excluirProduto($event)"
+        [nomeDoProduto] = "produto.nome"
+        [precoDoProduto] = "produto.preco"
+        [linkDaImagem] = "produto.linkImg"
+        [idProduto]= "produto.id"
+        
+        >
+        </app-produto-carrinho>
+        </div>
+        
+        <div class="total">
+            <p class="valorTotal">
+                {{valorBR}}
+            </p></div>
+        <button routerLink="/obrigado" class="finalizacao">Confirmar Compra</button>
+
+    </div>
+</main>
+
+<app-footer></app-footer>
+
+</div>

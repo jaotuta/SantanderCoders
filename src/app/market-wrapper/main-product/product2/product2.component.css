@@ -1,0 +1,69 @@
+.div-produto {
+    height: auto;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productImgs {
+    margin: 6px;
+    max-height: 170px;
+    filter: saturate(0.7);
+}
+.productImgs:hover {
+    filter: saturate(1.2);
+}
+.productDescription {
+    margin-left: 7px;
+    font-size: 0.8rem;
+    color: rgb(117, 117, 117);
+}
+.productPrice {
+    background-color: rgb(228, 228, 228);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 45px;
+    align-self: flex-end;
+    flex-grow: 1;
+
+}
+
+.price {
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.valor {
+    color: crimson;
+    font-size: 1.2rem;
+    margin: 10px;
+    font-weight: 900;
+
+}
+
+.carrinho {
+   width: 30px;
+   height: 20px;
+   align-self: center;
+   border: none;
+   background-color: rgb(170, 170, 170);
+   padding: 5px;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.carrinho:hover{
+    background-color: rgb(190, 190, 190);
+
+}
+
+.cifrao {
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
+}

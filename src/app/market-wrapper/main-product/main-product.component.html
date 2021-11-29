@@ -1,0 +1,14 @@
+<main>
+    <div class="main-content">
+        <div class="listaProdutos" *ngFor="let produto of produtos">
+            <app-product2 (idProdAdicionado)="idProdAdicionado($event)"  (paraOPai)="addCarrinho($event)" 
+            [idProduto] = "produto.id"
+            [nomeDoProduto] = "produto.nome"  
+            [precoDoProduto] = "produto.preco" 
+            [linkDaImagem] = "produto.linkImg"
+            >
+            </app-product2>
+        </div>
+ 
+    </div>
+</main>

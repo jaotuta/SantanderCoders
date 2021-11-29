@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, input, body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    background-color: rgb(211, 211, 211);
+}
